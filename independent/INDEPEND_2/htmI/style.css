@@ -24,15 +24,21 @@ body {
     border-radius: 5px;
   }
   h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     color: #000000;
+    border-radius: 20px;
     font-size: 40px;
-    border-radius: 100%;
+    background-color: #21520081;
   }
 
   h2 {
     color: #000000;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #a6ff0088;
   }
 
   h2 {
