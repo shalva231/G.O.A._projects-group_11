@@ -37,8 +37,6 @@ drawing = [
 
 choice_end = '''_______________________________________________'''
 
-count = 0
-
 p1 = ""
 p2 = ""
 
@@ -49,11 +47,10 @@ disconected = random.choice([
 "software-related problems"
 ])
 
-if count == 0:
-    print("\n \n searching fo a lobby.... ")
-    count += 1
-else:
-    print("\n \n searching fo a new lobby.... ")
+
+
+print("\n \n searching fo a lobby.... ")
+
 time.sleep(2)
 print("!lobby found!")
 print("\n")
@@ -73,13 +70,15 @@ else:
     p1_index = choice.index(p1)
     p1_final = f" ----------\n player 1's choice \n ---------- \n {p1} \n {drawing[p1_index]}"
 
+#figure out who the winner is
 
 if p1 == p2:
     result = f"p1 and p2 had a draw in this game"
 
 
-#[ "rock" , "paper" , "scissors"]
-#[    0        1           2    ]
+            #[ "rock" , "paper" , "scissors"]
+            #[    0        1           2    ]
+
 elif p1 == choice[0] and p2 == choice[2] or p1 == choice[1] and p2 == choice[0] or p1 == choice[2] and p2 == choice[1]:
     result = f"p1 won this game by playing a {p1} \n ||!!CONGRATS!!||"
 else:
