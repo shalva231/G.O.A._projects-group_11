@@ -1,7 +1,8 @@
 import random
 import time
 
-print("hello dear player welcome to my !ONLINE! rock paper scissors \n enjoy playing agains bots.. i mean tottally real people")
+time.sleep(2)
+
 
 choice = [ "rock" , "paper" , "scissors"]
 
@@ -47,8 +48,9 @@ disconected = random.choice([
 "software-related problems"
 ])
 
+print("\n ---------- \nhello dear player welcome to my !ONLINE! rock paper scissors \n enjoy playing agains bots.. i mean tottally real people")
 
-
+time.sleep(1)
 print("\n \n searching fo a lobby.... ")
 
 time.sleep(2)
@@ -111,12 +113,10 @@ time.sleep(1)
 print("\n",result)
 print(choice_end)
 
-
-
-print("\n")
 print(choice_end)
 print(f"disconected why? ({disconected})")
 print(choice_end)
+print("\n")
 
     
 
