@@ -65,7 +65,9 @@ p2_final = f" ----------\n player 2's choice \n ---------- \n {p2} \n {drawing[p
 
 p1 = input("please choose(rock , paper , scissors):  ")
 while p1 not in choice:
+    print(choice_end)
     print("!!invalid!!! \n .try again.")
+    print(choice_end)
     p1 = input("please choose(rock , paper , scissors):  ")
 
 else:
@@ -112,7 +114,7 @@ print("[loaded] \n")
 time.sleep(1)
 print("\n",result)
 print(choice_end)
-
+print("\n")
 print(choice_end)
 print(f"disconected why? ({disconected})")
 print(choice_end)
