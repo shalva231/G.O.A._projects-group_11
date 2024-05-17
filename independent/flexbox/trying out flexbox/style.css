@@ -1,0 +1,44 @@
+body {
+    font:"arial";
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    border: 10px solid black;
+}
+.item {
+    width: 150px;
+    height: 150px;
+    border: 10px solid rgb(255, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(141, 61, 75);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+
+    /* flex direction is automaticaly set to row */
+    /* flex-direction: row; */
+
+    /* aligns items on the x if flex direction is row*/
+    justify-content: space-between;
+
+    /* aligns items on the y if flex direction is row*/
+    align-items: flex-start;
+
+    /* wraps items if they dont fit on the page */
+    flex-wrap: wrap;
+}
+
