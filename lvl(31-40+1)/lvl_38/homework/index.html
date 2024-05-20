@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            text-align: center;
+        }
+        video, audio {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Media Site</h1>
+    </header>
+
+    
+        <section>
+            <h2>Video Section</h2>
+            <video controls muted width="400" height="300">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Audio Section</h2>
+            <audio controls>
+                <source src="video.mp4" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+header {
+    font-size: 20px;
+}
+body {
+    text-align: center;
+}
+div {
+    background-color: aqua;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.messege {
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+button {
+    color: green;
+}

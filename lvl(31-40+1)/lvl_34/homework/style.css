@@ -1,0 +1,17 @@
+body {
+    font-style: Arial;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    font-size: 40px;
+}
