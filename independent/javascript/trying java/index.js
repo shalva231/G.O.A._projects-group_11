@@ -33,24 +33,24 @@ comment
 // 2. assignment  ( = assignment operator)
 
 
-// let firstname
-// firstname = "shalva"
+let firstname
+firstname = "shalva"
 
-// let age
-// age = 20
-// age += 1
+let age
+age = 20
+age += 1
 
-// let student
-// student = true
+let student
+student = true
 
-// console.log("hello" , firstname)
-// console.log("you are" , age , "years old")
-// console.log("enroled:" , student)
+console.log("hello" , firstname)
+console.log("you are" , age , "years old")
+console.log("enroled:" , student)
 
 
-// document.getElementById("p1").innerHTML = "hello " + firstname
-// document.getElementById("p2").innerHTML = "you are " + age + " years old"
-// document.getElementById("p3").innerHTML = "enroled: " + student
+document.getElementById("p1").innerHTML = "hello " + firstname
+document.getElementById("p2").innerHTML = "you are " + age + " years old"
+document.getElementById("p3").innerHTML = "enroled: " + student
 
 
 
