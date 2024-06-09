@@ -1,0 +1,13 @@
+body {
+    height: 1000px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.colored-text {
+    color: rgb(0, 255, 0); /* makes the text green*/
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.image {
+    width: 50%; /* keeps the image always 50% of the screens size */
+}
