@@ -1,0 +1,373 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(160, 253, 253);
+    color: rgb(18, 18, 18);
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: rgb(0, 172, 193); 
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: -350px;
+    margin-top: -30px;
+}
+
+.profile-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.profile-header .profile-name {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-bio {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+.profile-content {
+    display: flex;
+}
+
+.profile-sidebar {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.profile-main {
+    flex: 2;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-about {
+    background-color: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 8px;
+    color: rgb(172, 193, 255);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_picture{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-info {
+    background-color: rgb(18, 18, 18); 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-info p{
+    color: rgb(0, 0, 0);
+}
+
+.profile-about,
+.profile-info{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-about h2,
+.profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(0, 129, 80); 
+    padding-bottom: 5px;
+    color: rgb(0, 129, 80);
+}
+
+.job-card {
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-image img {
+    width: 100%;
+    height: auto;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(18, 18, 18);
+}
+
+.job-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 171, 193, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.job-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.job-info {
+    color: rgb(172, 193, 255);
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.job-date {
+    color: rgb(172, 193, 255);
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-posts {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: rgb(0, 129, 80);
+}
+
+.profile-posts h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(0, 129, 80);
+    padding-bottom: 5px;
+    color: rgb(0, 129, 80);
+}
+
+.post {
+    background-color: #7ae9c76c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(0, 129, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.post h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(0, 115, 119);
+}
+
+.post p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-top: -10;
+}
+
+.post a {
+    color: rgb(0, 172, 193);
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.profile-squad-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-squad {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+.profile-squad h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(0, 129, 80);
+    border-bottom: 2px solid rgb(0, 129, 80);
+    padding-bottom: 5px;
+}
+
+.profile-squad ul {
+    padding-left: 20px;
+}
+
+.squad-achievements,
+.squad-testimonials,
+.squad-events,
+.soon-to-be-leaders {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid rgb(0, 129, 80);
+}
+
+.squad-achievements h3,
+.squad-testimonials h3,
+.squad-events h3,
+.soon-to-be-leaders h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(0, 129, 80);
+}
+
+.squad-achievements ul {
+    padding-left: 20px;
+}
+
+.squad-testimonials p,
+.squad-events p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.soon-to-be-leaders {
+    display: flex;
+    flex-direction: column;
+}
+
+.leader-card {
+    display: flex;
+    align-items: center;
+    background-color: rgb(52, 125, 129); 
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.leader-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.leader-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.leader-info h3 {
+    font-size: 18px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.banner{
+    height: 680px;
+    margin-top: -200px;
+}
+
+.members {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.members h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(0, 129, 80);
+    border-bottom: 2px solid rgb(0, 129, 80);
+    padding-bottom: 5px;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(52, 125, 129);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.member-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.member-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.member-info p {
+    margin: 0;
+}
+
+.footer {
+    background-color: rgb(0, 172, 193);
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
