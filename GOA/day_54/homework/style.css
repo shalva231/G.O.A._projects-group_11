@@ -1,0 +1,117 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font: roboto;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+div {
+    border-radius: 25px;
+}
+
+.container {
+    display: flex;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 800px;
+    border-radius: 25px;
+}
+
+.form-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: 600px;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url('image.png') no-repeat center center;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b0b0b0;
+}
+
+input {
+    padding: 10px 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.sign-in-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sign-up {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
