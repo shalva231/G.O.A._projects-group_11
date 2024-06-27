@@ -1,0 +1,11 @@
+.styled-paragraph {
+    width: 400px;
+    height: 200px;
+    padding: 30px 15px;
+    border: 5px solid red;
+    background-color: yellow;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
