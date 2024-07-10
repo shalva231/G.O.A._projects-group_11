@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.main{
+    width: 34.5%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+    width: 103%;
+  background: url("https://media.istockphoto.com/id/586392282/photo/sunset-over-the-northern-sea-in-sweden.webp?b=1&s=170667a&w=0&k=20&c=Lxm2YNhN044swVPIanO88U9p3wyFfBhkAt6E-rVa8PY=") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.services,
+.portfolio {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 20px;
+}
+
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 20px;
+}
+
+.service-item,
+.portfolio-item {
+  background-color: #fff;
+  padding: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url(https://media.istockphoto.com/id/586392282/photo/sunset-over-the-northern-sea-in-sweden.webp?b=1&s=170667a&w=0&k=20&c=Lxm2YNhN044swVPIanO88U9p3wyFfBhkAt6E-rVa8PY=);
+}

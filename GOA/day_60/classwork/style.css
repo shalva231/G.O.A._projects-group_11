@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(207, 216, 220);
+}
+
+.child1 {
+    width: 100px;
+    height: 100px;
+
+    background-color: green;
+    border: 2px solid blue;
+
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border-radius: 100px;
+}
+
+.child2 {
+    width: 100px;
+    height: 100px;
+
+    background-color: green;
+    border: 2px solid blue;
+
+    position: relative;
+    top: -80px;
+    left: 380px;
+    border-radius: 100px;
+}
+
+.child3 {
+    width: 100px;
+    height: 100px;
+
+    background-color: green;
+    border: 2px solid blue;
+
+    position: relative;
+    left: 225px;
+    border-radius: 48% 52% 51% 49% / 36% 36% 64% 64% ;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apple</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            font-family: arial, sans-serif;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            flex-direction: columnn;
+            background-color: #000000;
+        }
+        img{
+            margin-bottom: 70px;
+        }
+
+        .content {
+            width: 100px;
+            height: 3px;
+            background-color: #ffffffb4;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .loading-bar {
+            width: 200px;
+            height: 5px;
+            background-color: #555;
+            border-radius: 10px;
+            margin: 0 auto 20px;
+        }
+
+        .loading-bar .fill {
+            width: 0px;
+            height: 100%;
+            background-color: white;
+            transition: width 0.5s;
+            border-radius: 10px;
+        }
+
+ 
+        body:hover .fill {
+            width: 100%;
+        }
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <div class="container">
+        <img src="https://clipart-library.com/new_gallery/111-1117009_official-apple-logo-png-unbitten-apple-logo.png" width="50px">
+        <div class="loading-bar">
+            <div class="fill"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

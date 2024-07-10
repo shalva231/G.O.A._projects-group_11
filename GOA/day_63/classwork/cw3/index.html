@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px;
+        }
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            border-radius: 0% 100% 38% 62% / 100% 55% 45% 0% ;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: blur(0.8px);
+            -webkit-filter: blur(0.8px);
+        }
+        .grid-item .text-overlay {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .grid-item .text-overlay h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .grid-item .text-overlay p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+    </style>
+    <title>Beautiful Places</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/1200px-Seoul_%28175734251%29.jpeg" alt="South Korea">
+            <div class="text-overlay">
+                <h2>South Korea</h2>
+                <p>Seoul is very beautiful place</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/1200px-Seoul_%28175734251%29.jpeg" alt="Tbilisi">
+            <div class="text-overlay">
+                <h2>Tbilisi</h2>
+                <p>Tbilisi is very beautiful place</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/1200px-Seoul_%28175734251%29.jpeg" alt="New York">
+            <div class="text-overlay">
+                <h2>New York</h2>
+                <p>New York is very beautiful place</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/1200px-Seoul_%28175734251%29.jpeg" alt="Paris">
+            <div class="text-overlay">
+                <h2>Paris</h2>
+                <p>Paris is very beautiful place</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/1200px-Seoul_%28175734251%29.jpeg" alt="Tokyo">
+            <div class="text-overlay">
+                <h2>Tokyo</h2>
+                <p>Tokyo is very beautiful place</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/1200px-Seoul_%28175734251%29.jpeg" alt="Dubai">
+            <div class="text-overlay">
+                <h2>Dubai</h2>
+                <p>Dubai is very beautiful place</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
