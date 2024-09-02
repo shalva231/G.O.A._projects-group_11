@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Simulation</title>
+</head>
+<body>
+<canvas id="simulationCanvas" width="1000" height="600"></canvas>
+<script>
+    const canvas = document.getElementById('simulationCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Ball object constructor
+    function Ball(x, y, vx, vy, radius, color) {
+        this.x = x;
+        this.y = y;
+        this.vx = vx;
+        this.vy = vy;
+        this.radius = radius;
+        this.color = color;
+
+        // Draw the ball
+        this.draw = function() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+            ctx.closePath();
+        };
+
+        // Update the ball's position
+        this.update = function() {
+            this.x += this.vx;
+            this.y += this.vy;
+
+            // Check for collisions with the canvas edges
+            if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+                this.vx = -this.vx;
+            }
+            if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+                this.vy = -this.vy;
+            }
+
+            this.draw();
+        };
+    }
+
+    // Create an array of balls
+    const balls = [];
+    for (let i = 0; i < 10; i++) {
+        const radius = Math.random() * 20 + 10;
+        const x = Math.random() * (canvas.width - 2 * radius) + radius;
+        const y = Math.random() * (canvas.height - 2 * radius) + radius;
+        const vx = (Math.random() - 0.5) * 5;
+        const vy = (Math.random() - 0.5) * 5;
+        const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        balls.push(new Ball(x, y, vx, vy, radius, color));
+    }
+
+    // Animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        balls.forEach(ball => ball.update());
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+</script>
+</body>
+</html>

@@ -1,10 +1,6 @@
 from turtle import *
 shape("turtle")
 #we want to make a house
-
-
-
-
 #step 1 square
 speed(5)
 width(5)
