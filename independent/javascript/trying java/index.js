@@ -137,13 +137,30 @@
 
 
 
-// let person = {
-//     name1: "shalva",
-//     age1: 20,
-//     name2: "gio",
-//     age2: 12 
-// };
-// person.name1 = "john";
+const person = {
+    name: "shalva",
+    lastName: "shubitidze",
+    age: 16,
+    academy: "goa",
+};
+
+console.log(person);
+
+
+
+// // person.name1 = "john";
+
+// console.log(person);
+// console.log(person.name1);
+// console.log(person.name2);
+// console.log(person.lastName1);
+// console.log(person.lastName2);
+// console.log(person.age1);
+// console.log(person.age2);
+// console.log(person.name1 + " " + person.lastName1);
+// console.log(person.name2 + " " + person.lastName2);
+
+
 
 
 
@@ -155,9 +172,25 @@
 // username = window.prompt("what is your username? ");
 // console.log(username);
 
-let username;
-document.getElementById("submit").onclick = function(){
-    username = document.getElementById("text").value; 
-    console.log(username);
-    document.getElementById("h1").textContent = "hello " + username;
-}
+// let username;
+// document.getElementById("submit").onclick = function(){
+//     username = document.getElementById("text").value; 
+//     console.log(username);
+//     document.getElementById("h1").textContent = "hello " + username;
+// }
+
+
+// ==============================================================================
+
+
+// const heading = document.getElementById("h1");
+// console.log(heading);
+
+// heading.textContent = "hallo";
+
+
+
+
+
+
+
