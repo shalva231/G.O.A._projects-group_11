@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Form Fields</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="button" id="clearButton">Clear</button>
+    </form>
+
+    <script>
+        const clearButton = document.getElementById('clearButton');
+        const form = document.getElementById('userForm');
+
+        clearButton.addEventListener('click', () => {
+            form.reset(); 
+        });
+    </script>
+</body>
+</html>

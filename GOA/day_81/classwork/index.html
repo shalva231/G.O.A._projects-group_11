@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Submission</title>
+    </head>
+    <body>
+        <h1>გაუმარჯოს</h1>
+        <form id="userForm">
+            <!-- სახელი -->
+            <label for="firstName">სახელი:</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <br />
+
+            <!-- გვარი -->
+            <label for="lastName">გვარი:</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <br />
+
+            <!-- ემაილი -->
+            <label for="email">ელფოსტა:</label>
+            <input type="email" id="email" name="email" required />
+            <br />
+
+            <!-- ფორმის გაგზავნა -->
+            <button type="submit">გაგზავნა</button>
+        </form>
+
+        <!-- ვითომ External JavaScript -->
+        <script>
+            // მონაცემების შესანახად მასივი
+            let users = [];
+
+            // ფორმის ელემენტის წამოღება
+            const userForm = document.getElementById("userForm");
+
+            userForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // თავიდან ავიცილოთ გვერდის განახლება
+
+                // ვიღებთ შეყვანილ მონაცემებს
+                const firstName = document.getElementById("firstName").value;
+                const lastName = document.getElementById("lastName").value;
+                const email = document.getElementById("email").value;
+
+                // ახალ ობიექტში ვინახავთ
+                const newUser = {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                };
+
+                // ობიექტს ვამატებთ users მასივში
+                users.push(newUser);
+
+                // მონაცემების ჩვენება კონსოლში (ამას ვერ დაინახავს მომხმარებელი)
+                console.log("ახალი მომხმარებელი დაემატა:", newUser);
+                console.log("მომხმარებლების სია:", users);
+
+                // ფორმის ველების გასუფთავება
+                userForm.reset();
+            });
+        </script>
+    </body>
+</html>
